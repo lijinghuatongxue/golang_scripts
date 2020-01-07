@@ -19,7 +19,7 @@ func main() {
 	if err != nil {
 		fmt.Println("	Your Domain is:", len(os.Args[1]))
 		fmt.Println("	Domain error ！ \n" +
-			"	eg : go run chk_harbor_public.go https://harbor.***.com")
+			"	sample : go run chk_harbor_public.go https://harbor.***.com")
 		defer response.Body.Close()
 	}
 	body, err := ioutil.ReadAll(response.Body)
